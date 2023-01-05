@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Vinyl&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Acme&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
+
+.title {
+  font-family: "Rubik Vinyl", cursive;
+  font-size: 40px;
+  text-align: center;
+  color: rgb(224, 211, 211);
+}
+
+.title__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 10px;
+  height: 50px;
+}
+
+.dice__container {
+  margin: 10px;
+}
+.dice__bump__down {
+  margin: 3px;
+  margin-top: 15px;
+  font-size: 25px;
+  color: rgb(224, 211, 211);
+}
+
+.dice__bump__up {
+  margin: 3px;
+  margin-bottom: 15px;
+  font-size: 25px;
+  color: rgb(224, 211, 211);
+}
+
+.roll__button {
+  font-family: "Acme", sans-serif;
+  font-size: 40px;
+  width: 150px;
+  height: 70px;
+  background-color: rgb(224, 211, 211);
+  color: gray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  margin: 10px auto;
+  margin-bottom: 20px;
+}
+
+.roll__button:hover {
+  background-color: rgb(203, 200, 200);
+}
+
+.button__dice {
+  font-size: 25px;
+  margin: 5px;
+  color: gray;
+  cursor: pointer;
+}
+
+.card__result__container {
+  width: 60%;
+  height: 500px;
+  margin: auto;
+  border: 5px solid rgb(224, 211, 211);
+  border-radius: 20px;
+  background-color: #ad8e70;
+}
+
+.card__result__title {
+  font-family: "Abril", "Fatface";
+  font-size: 30px;
+  color: white;
+  text-align: center;
+  margin-top: 5px;
+}
+
+.card__container {
+  display: flex;
+  justify-content: center;
+}
