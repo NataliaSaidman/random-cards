@@ -11,7 +11,7 @@
   box-shadow: -3px 4px 19px 12px rgba(0, 0, 0, 0.42);
   border-radius: 15px;
   background-color: rgb(235, 235, 235);
-  border: rgb(90, 87, 87) 3px solid;
+  border: #fb5994 3px solid;
 }
 
 .card__img {
@@ -21,7 +21,7 @@
   object-fit: cover;
   justify-self: center;
   border-radius: 15px 15px 0 0;
-  border-bottom: rgb(90, 87, 87) 3px solid;
+  border-bottom: #fb5994 5px solid;
 }
 
 .card__intro {
@@ -56,7 +56,7 @@
   height: 80px;
   justify-content: space-between;
   align-items: center;
-  background-color: rgb(90, 87, 87);
+  background-color: #fb5994;
   border-radius: 0 0 15px 15px;
 }
 
