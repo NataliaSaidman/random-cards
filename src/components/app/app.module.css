@@ -37,13 +37,14 @@
 .roll__button {
   font-family: "Acme", sans-serif;
   font-size: 40px;
-  width: 150px;
-  height: 70px;
+  width: 300px;
+  height: 100px;
   background-color: rgb(224, 211, 211);
   color: gray;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   border-radius: 15px;
   margin: 10px auto;
   margin-bottom: 20px;
@@ -53,11 +54,24 @@
   background-color: rgb(203, 200, 200);
 }
 
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 .button__dice {
-  font-size: 25px;
-  margin: 5px;
+  font-size: 35px;
+  margin: 10px;
   color: gray;
   cursor: pointer;
+}
+
+.diceIcon {
+  animation: spin 1s infinite linear;
 }
 
 .card__result__container {
@@ -66,7 +80,9 @@
   margin: auto;
   border: 5px solid rgb(224, 211, 211);
   border-radius: 20px;
-  background-color: #ad8e70;
+  background-image: url("../../assets/background.jpg");
+  background-repeat: repeat;
+  background-position: center;
 }
 
 .card__result__title {

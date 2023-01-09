@@ -13,6 +13,11 @@ import { CardContainer } from "../cardContainer";
 
 export const App = () => {
   const [diceResult, setDiceResult] = useState("lanzá el dado");
+  const [isSpinning, setIsSpinning] = useState(false);
+
+  function handleClick() {
+    setIsSpinning(!isSpinning);
+  }
 
   const handleRollDice = () => {
     const games = [
@@ -24,7 +29,7 @@ export const App = () => {
       "Stone Age",
     ];
     let number = Math.floor(Math.random() * games.length);
-    setDiceResult(games[number]);
+    isSpinning ? "" : setDiceResult(games[number]);
   };
 
   return (
@@ -42,8 +47,22 @@ export const App = () => {
           <BsDice2Fill className={styles.dice__bump__up} />
         </div>
       </div>
-      <button className={styles.roll__button} onClick={handleRollDice}>
-        <BsDice6 className={styles.button__dice} /> ¡Tirá!
+      <button
+        className={styles.roll__button}
+        // onClick={() => {
+        //   handleRollDice();
+        // }}
+      >
+        <div>¡Tirá el dado!</div>
+        <BsDice6
+          className={`${styles.button__dice} ${`${
+            isSpinning ? "" : `${styles.diceIcon}`
+          }`}`}
+          onClick={() => {
+            handleRollDice();
+            handleClick();
+          }}
+        />{" "}
       </button>
       <div className={styles.card__result__container}>
         <h2 className={styles.card__result__title}>
